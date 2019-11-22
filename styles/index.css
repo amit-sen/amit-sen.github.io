@@ -41,7 +41,7 @@ a {
 }
 #bold {
   text-decoration: none;
-  color: #5b5b5b;
+  color: #777777;
   /* font-weight: bold; */
 }
 #bold:hover {
