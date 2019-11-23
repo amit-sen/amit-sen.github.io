@@ -25,7 +25,7 @@ a {
 
 .text-box p {
   position: relative;
-  top: 4vh;
+  top: 5vh;
   width: 90%;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -48,13 +48,27 @@ a {
   color: #2196f3;
 }
 #works {
-  color: #2196f3;
-}
-#works:hover {
   color: #ff9800;
+}
+.quote {
+  font-family: "Raleway", sans-serif;
+  font-size: 3vh;
+  font-weight: 100;
+  text-align: left;
+  color: #2196f3;
+  position: relative;
+  top: 8vh;
+  width: 80%;
+  left: 45%;
+  transform: translate(-50%, 0%);
 }
 @media only screen and (min-width: 900px) {
   .text-box p {
     width: 60%;
+  }
+  .quote {
+    text-align: center;
+    left: 50%;
+    top: 20vh;
   }
 }
