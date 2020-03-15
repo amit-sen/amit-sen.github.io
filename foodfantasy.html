@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="theme-color" content="#fff200">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" alt="favicon for foodyC." type="image/png" href="icons/icon-01.png">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>foodfantasy</title>
+	<link rel="stylesheet" href="style/foodfantasy.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<!-- ONESIGNAL -->
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+		var OneSignal = window.OneSignal || [];
+		  OneSignal.push(function() {
+		    OneSignal.init({
+		      appId: "e2d47494-d898-47f5-9453-f21823914215",
+		    });
+		  });
+	</script>
+	<!-- ONESIGNAL -->
+	<!--  META DESCRIPTION -->
+	<meta name="description" content="foodyC.'s forum Foodfantasy is here. It is still in beta and will be for sometime.">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Titas Mallick">
+	<meta name="google" value="notranslate">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta property="og:url" content="foodyc.xyz" />
+	<meta property="og:type" content="Article" />
+	<meta property="og:title" content="Foodfantasy Beta" />
+	<meta property="og:description" content="foodyC.'s new Beta foodforum Foodfantasy is here. Check out it's beta glory." />
+	<meta property="og:image" content="assets/fbimg-foodfantasy.jpg" />
+	<script src="js/rightClickDisable.js"></script>
+	<!--  META DECRIPTION -->
+
+
+	<!-- Manifest -->
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<!-- Trigger the modal with a button -->
+	<div class="mainHeading">
+		<p class="titleOfThePage">Foodfantasy<sup style="font-size: 1.2rem; font-weight: bold;">Beta</sup></p>
+		<a href="index.html"><p class="subTitleOfThePage"><em>powered by foodyC.</em></p></a>
+		<button type="button" class="foodycbutton" id="loginButtonShowWhenNOTLOGIN" data-toggle="modal" data-target="#myModal">Login</button>
+		<button type="button" style="border: none;" class="foodycbutton" id="acdetailsButtonShowWhenLOGIN" data-toggle="modal" data-target="#myModal"> <img class="avatar" src="assets/userAvatar.svg" style="height: 25px; width: 25px; border:red 1px dashed; border-radius: 100%; padding: 1px;" ></button>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 style="text-align: center;" class="modal-title">Login to your foodyC. Account</h4>
+				</div>
+				<div class="modal-body">
+					<div style="display: none;" class="forms" id="optThree">
+						<form id="loginUser">
+							<legend>Welcome to foodyC.</legend>
+							<p>Login to Your Profile</p>
+							<input type="text" name="email" id="logInEmail" placeholder="Your Registered Email"><br>
+							<input type="password" name="pass" id="logInPass" placeholder="password">
+							<br>
+							<button type="submit">Login</button>
+							<p id="loginError"></p>
+							<p style="cursor: pointer;">Don't have an Account? SignUp Now.</p>
+							<p style="cursor: pointer;"><em>Forgot your Password?</em></p>
+						</form>
+					</div>
+					<div style="text-align: center;" id="showWhoLoggedIn"></div>
+					<div style="display: none;" class="forms" id="optTwo">
+						<form id="logOut">
+							<h3>Thanks for being with Us, You are amazing!</h3>
+							<!-- <p id="logOutConfirm"></p> -->
+							<button>Logout</button>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div style="display: none;" id="show-to-only-verified-users">
+		<!-- ----------------------------------------------------THIS IS YOUR WORK AREA-------------------------- -->
+		<div class="chatArea">
+			<div class="wrapper">
+				<div class="showAllChats" id="showAllChats"></div>
+			</div>
+			<br>
+			<div>
+				<form class="chatInputField" id="chatInputField">
+					<input type="text" name="chatTextValue" required>
+					<button>Send</button>
+				</form>
+			</div>
+		</div>
+		<!-- ------------------------------------------------WORKAREA ENDS HERE-------------------------- -->
+	</div>
+
+	<p class="footerText">All rights reserved by foodyC., 2020 | All technological rights reserved to Creativegun</p>
+
+
+	<!-- ---------------------THIS AREA FOR FALL BACK CONTENTS----------------------------------- -->
+
+	<div class="offlinecontents" id="offlinecontents">
+		<h4>You are not Logged in. You must be a verified user of foodyC. Account to access this area. If you don't have an account. Visit This <a>Link.</a></h4>
+
+	</div>
+	<!-- ---------------------THIS AREA FOR FALL BACK CONTENTS----------------------------------- -->
+	<script src="js/foodfantasy.js"></script>
+</body>
+<script>
+	if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('titas.js');
+	}
+</script>
+
+</html>

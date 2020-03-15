@@ -1,0 +1,42 @@
+.head{
+width: 14vh;
+padding-top: 30px;
+
+}
+
+
+.footer {
+   /*position: fixed;*/
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+.txta{
+	/*background: black;*/
+	width: 85%;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+}
+
+.buttn{
+	background: #debbb8;
+	width: 200px;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+	padding: 1px;
+	border-radius: 100px;
+
+
+}
+.buttn:hover{
+	background: #b8dbde;
+	transition: 0.4s;
+}
+
+.buttn:active{
+	background: #dbdeb8;
+}
+
+

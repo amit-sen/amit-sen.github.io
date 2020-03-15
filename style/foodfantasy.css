@@ -1,0 +1,364 @@
+html {
+	margin: 0px;
+	height: 100%;
+	margin: 5px;
+}
+
+html,
+body {
+	overflow: hidden;
+}
+
+* {
+	font-family: 'Quicksand';
+	text-decoration: none;
+}
+
+*:focus {
+	outline: none;
+}
+
+.titleOfThePage {
+	font-size: 2rem;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+.subTitleOfThePage {
+	font-size: 0.8rem;
+	margin-left: 77px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.forms {
+	box-shadow: 0px 0px 4px 0px #c6c6c6;
+	margin-left: 50%;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	transform: translate(-50%, 0);
+	width: 80%;
+	text-align: center;
+	padding: 20px;
+	display: grid;
+	border-radius: 20px;
+	background: white;
+}
+
+.forms>form>legend {
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 20px;
+}
+
+.forms>form>input {
+	background: white;
+	border-radius: 5px;
+	border: 1px #ff758c dashed;
+	padding: 10px;
+	margin: 5px;
+	width: 80%;
+}
+
+.forms>form>button {
+	z-index: 100;
+	text-align: center;
+	padding: 10px;
+	margin: 5px;
+	color: white;
+	font-weight: bold;
+	background: #4286f5;
+	border: none;
+}
+
+.forms>form>div>button {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 20%;
+	color: white;
+	font-weight: bold;
+	background: #4286f5;
+	border: none;
+}
+
+.verifyButton {
+	text-align: center;
+	padding: 10px;
+	margin: 20px;
+	width: 20%;
+	color: white;
+	font-size: 0.7rem;
+	font-weight: bold;
+	background: #4286f5;
+	border: none;
+}
+
+.chatArea {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 60%;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.chatArea>div>div>p {
+	font-size: 0.8rem;
+	margin: 0px;
+}
+
+.chatInputField {
+	display: flex;
+	flex-direction: row;
+}
+
+.chatInputField>input {
+	background: white;
+	border-radius: 5px;
+	border: red 1px dashed;
+	width: 90%;
+	height: 30px;
+}
+
+.chatInputField>button {
+	margin-left: 10px;
+	float: right;
+	background: white;
+	border-radius: 5px;
+	border: green 1px dashed;
+	height: 30px;
+	width: 20%;
+}
+
+.showAllChats {
+	display: flex;
+	/* max-height: 70vh;
+	overflow: scroll;
+	overflow-x: hidden; */
+	flex-direction: column;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.wrapper {
+	border-radius: 10px;
+	/* border: 1px red dashed; */
+	box-shadow: inset 0px 0px 5px 0px #c6c6c6;
+	background: #fcfcfc;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column-reverse;
+	/* background: yellow; */
+	max-height: 70vh;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.chatInputField {
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+
+.foodycbutton {
+	display: none;
+	z-index: 99;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	margin-left: 50%;
+	background: white;
+	border-bottom: red 1px dashed;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin: 10px;
+}
+
+.offlinecontents {
+	position: fixed;
+	left: 0;
+	bottom: 50%;
+	transform: translate(0, +50%);
+	width: 100%;
+	color: black;
+	text-align: center;
+}
+
+.footerText {
+	z-index: 1;
+	font-size: 1rem;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: black;
+	text-align: center;
+}
+
+body {
+	/*background-image: linear-gradient(to right, #667eea , #89f7fe);*/
+}
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+	* {
+		font-family: 'Quicksand';
+		text-decoration: none;
+	}
+	*:focus {
+		outline: none;
+	}
+	.titleOfThePage {
+		font-size: 2rem;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-bottom: 1px;
+	}
+	.subTitleOfThePage {
+		font-size: 0.8rem;
+		margin-left: 77px;
+		margin-top: 0px;
+		padding: 0px;
+	}
+	.forms {
+		box-shadow: 0px 0px 4px 0px #c6c6c6;
+		margin-left: 50%;
+		margin-bottom: 10px;
+		margin-top: 20px;
+		transform: translate(-50%, 0);
+		width: 80%;
+		text-align: center;
+		padding: 20px;
+		display: grid;
+		border-radius: 20px;
+		background: white;
+	}
+	.forms>form>legend {
+		font-size: 1.8rem;
+		text-align: center;
+		padding: 20px;
+	}
+	.forms>form>input {
+		background: white;
+		border-radius: 5px;
+		border: 1px #ff758c dashed;
+		padding: 10px;
+		margin: 5px;
+		width: 80%;
+	}
+	.forms>form>button {
+		text-align: center;
+		padding: 10px;
+		margin: 5px;
+		color: white;
+		font-weight: bold;
+		background: #4286f5;
+		border: none;
+	}
+	.forms>form>div>button {
+		text-align: center;
+		padding: 10px;
+		margin: 10px;
+		width: 20%;
+		color: white;
+		font-weight: bold;
+		background: #4286f5;
+		border: none;
+	}
+	.verifyButton {
+		text-align: center;
+		padding: 10px;
+		margin: 20px;
+		width: 20%;
+		color: white;
+		font-size: 0.7rem;
+		font-weight: bold;
+		background: #4286f5;
+		border: none;
+	}
+	.chatArea {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 90%;
+		margin-left: 50%;
+		transform: translate(-50%, 0);
+	}
+	.chatArea>div>div>p {
+		font-size: 0.8rem;
+		margin: 0px;
+	}
+	.chatInputField {
+		display: flex;
+		flex-direction: row;
+	}
+	.chatInputField>input {
+		background: white;
+		border-radius: 5px;
+		border: red 1px dashed;
+		width: 90%;
+		height: 30px;
+	}
+	.chatInputField>button {
+		margin-left: 10px;
+		float: right;
+		background: white;
+		border-radius: 5px;
+		border: green 1px dashed;
+		height: 30px;
+		width: 20%;
+	}
+	.showAllChats {
+		display: flex;
+		/* max-height: 70vh;
+	overflow: scroll;
+	overflow-x: hidden; */
+		flex-direction: column;
+		border-radius: 10px;
+		padding: 10px;
+	}
+	.wrapper {
+		border-radius: 10px;
+		/* border: 1px red dashed; */
+		box-shadow: inset 0px 0px 5px 0px #c6c6c6;
+		background: #fcfcfc;
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column-reverse;
+		/* background: yellow; */
+		max-height: 70vh;
+		overflow: scroll;
+		overflow-x: hidden;
+	}
+	.chatInputField {
+		padding-bottom: 20px;
+		border-radius: 10px;
+	}
+	.foodycbutton {
+		z-index: 99;
+		position: absolute;
+		top: 10px;
+		right: 0px;
+		margin-left: 50%;
+		background: white;
+		border-bottom: red 1px dashed;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		margin: 10px;
+	}
+	.offlinecontents {
+		padding: 20px;
+		position: fixed;
+		left: 0;
+		bottom: 50%;
+		transform: translate(0, +50%);
+		width: 100%;
+		color: black;
+		text-align: center;
+	}
+}

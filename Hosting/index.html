@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- ONESIGNAL -->
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+		var OneSignal = window.OneSignal || [];
+		  OneSignal.push(function() {
+		    OneSignal.init({
+		      appId: "e2d47494-d898-47f5-9453-f21823914215",
+		    });
+		  });
+	</script>
+	<!-- ONESIGNAL -->
+	<meta charset="utf-8">
+	<link rel="shortcut icon" alt="favicon for foodyC." type="image/png" href="icon-01.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Titas</title>
+	<link rel="stylesheet" href="">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<!-- 	META DESCRIPTION -->
+	<meta name="description" content="The Next Big Thing Is Coming!">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Titas Mallick">
+	<meta name="google" value="notranslate">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta property="og:url" content="foodyc.xyz" />
+	<meta property="og:type" content="Article" />
+	<meta property="og:title" content="The Next Big Thing!" />
+	<meta property="og:description" content="Yeah! The Next Big Thing is Coming!" />
+	<meta property="og:image" content="fbimg.jpg" />
+	<script src="js/rightClickDisable.js"></script>
+</head>
+<style>
+html,body{
+	margin: 0px;
+	background: #fff200;
+	font-family: 'Quicksand', sans-serif;
+}
+.nbc{
+	width: 30vw;
+	margin: 20px;
+}
+#demo{
+	text-align: center;
+	font-weight: bold;
+	font-size: 4rem;
+	margin-top: 10px;
+}
+#footer{
+	position: fixed;
+	bottom: 0px;
+	margin-left: 50%;
+	transform: translate(-50%,0);
+	text-align: center;
+	font-weight: bold;
+}
+@media screen and (max-width: 768px){
+	.nbc{
+	width: 90vw;
+	margin: 20px;
+	}
+	#demo{
+	text-align: center;
+	font-weight: bold;
+	font-size: 3rem;
+	margin-top: 100px;
+	}
+}
+</style>
+<body>
+	
+	<img class="nbc" src="nbc.svg" alt="logo">
+	<p id="demo"></p>
+	<p id="footer">So Keep Calm</p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 15, 2020 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "It is already oy there!";
+  }
+}, 1000);
+</script>
+	
+</body>
+</html>

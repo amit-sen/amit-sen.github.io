@@ -1,0 +1,500 @@
+body,
+html {
+	height: 100%;
+	margin: 0;
+}
+
+html,
+body {
+	font-family: 'Quicksand', sans-serif;
+	scroll-behavior: smooth;
+	text-decoration-style: none;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+.foodType_Symbol{
+	width: 15px;
+	float: right;
+	margin: 10px;
+}
+#foodType{
+	margin: 10px;
+	border: 1px dashed red;
+	width: 50%;
+}
+.submitedRating{
+	width: 20%;
+	/* background: yellow; */
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+}
+.slidecontainer {
+	width: 100%;
+}
+
+.slider {
+	margin: 10px;
+	width: 100%;
+	border-radius: 50px;
+	-webkit-appearance: none;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+.slider:hover {
+	opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+	border-radius: 50px;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 30px;
+	height: 10px;
+	background: orange;
+	cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+#imgUpload {
+	padding: 20px;
+	margin: 20px;
+	border: 1px cyan dashed;
+	border-radius: 20px;
+	/*	background: red;*/
+}
+
+#imgUpload>legend {
+	text-align: center;
+	font-weight: bold;
+}
+
+#imgUpload>button {
+	margin: 10px;
+	background: white;
+	padding: 13px;
+	border: 1px red dashed;
+}
+
+#imgUpload>input {
+	background: white;
+	padding: 10px;
+	border: 1px green dashed;
+}
+
+a:hover {
+	color: white;
+}
+
+.testimoPics {
+	width: 100%;
+	border-radius: 10px;
+	height: 40vh;
+	object-fit: cover;
+	object-position: center;
+}
+
+.formDesign>input {
+	padding: 5px;
+	border: 1px red dashed;
+}
+
+.formDesign>button {
+	padding: 10px;
+	border: 1px red dashed;
+	background: white;
+}
+
+#addReviews {
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	text-align: center;
+	width: 90%;
+	border: 1px orange dashed;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+#addReviews>input {
+	border: 1px red dashed;
+	padding: 5px;
+	margin: 5px;
+	width: 60%;
+	text-align: center;
+}
+
+.button {
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	background: white;
+	border: 1px dashed red;
+	padding: 10px;
+	text-align: center;
+}
+
+.button2 {
+	background: white;
+	border: 1px dashed red;
+	padding: 10px;
+	text-align: center;
+}
+
+#addReviews>button {
+	background: white;
+	border: 1px red dashed;
+	padding: 5px;
+	margin: 5px;
+	width: 30%;
+	text-align: center;
+}
+
+#addReviews>textarea {
+	height: 100px;
+	background: white;
+	border: 1px red dashed;
+	padding: 5px;
+	margin: 5px;
+	min-width: 60%;
+	max-width: 60%;
+	text-align: center;
+}
+
+.ratingSections {
+	display: grid;
+	grid-template-columns: 30% 60% 10%;
+	align-items: center;
+	justify-items: center;
+	border: 1px red dashed;
+	width: 60%;
+	margin: auto;
+}
+
+.accountBanner {
+	/*background: linear-gradient( to bottom right, #89f7fe, #ff7eb3);*/
+	padding: 10px;
+	margin: 10px;
+	border: 1px red dashed;
+	border-radius: 10px;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+}
+
+
+/*SERACH BAR*/
+
+#searchbar {
+	margin-top: 70px;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;
+	border: 1px cyan solid;
+	border-radius: 50px;
+}
+
+input[type=text] {
+	width: 25%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+
+/* When the input field gets focus, 
+        change its width to 100% */
+
+input[type=text]:focus {
+	width: 30%;
+	outline: none !important;
+}
+
+#list {
+	display: none;
+	text-align: left;
+	padding: 5px;
+	width: 50%;
+	margin-top: 0px;
+	/*border-radius: 20px;*/
+	box-shadow: 0px 0px 4px 0px #c6c6c6;
+	max-height: 200px;
+	overflow-y: auto;
+	font-size: 10;
+	border: 1px orange dashed;
+	/*background: grey;*/
+}
+
+
+/*   SCROLLBAR*/
+
+
+/* width */
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+
+/*   SCROLLBAR*/
+
+.foods {
+	display: list-item;
+}
+
+ul>li {
+	padding: 5px;
+}
+
+ul>li:hover {
+	background: #667eea;
+	transition: 0.15s ease-in-out;
+}
+
+
+/*SERACH BAR*/
+
+.navigation {
+	top: 0;
+	width: 100%;
+	background-color: #fff200;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	position: fixed;
+	box-shadow: 0px 4px 10px -2px #c6c6c6;
+	z-index: 1;
+}
+
+#links {
+	text-decoration: none;
+	color: black;
+}
+
+#links:hover {
+	color: white;
+}
+
+.header {
+	margin-top: 100px;
+	padding: 20px;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	top: 100px;
+	border-radius: 20px;
+	box-shadow: 0px 4px 10px -2px #c6c6c6;
+	border: 2px #fff200 dashed;
+	/*background-color: #fff200;*/
+}
+
+.header>img {
+	height: 10vh;
+}
+
+.Verdict {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr;
+	margin: 40px;
+}
+
+.Recipies {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 40px;
+}
+
+.Recipies>div>em:last-child {
+	font-size: 0.6rem;
+}
+
+.Recipies>div {
+	text-align: justify;
+	padding: 10px;
+	border: 1px red dashed;
+	border-radius: 20px;
+	box-shadow: 0px 4px 10px -2px #c6c6c6;
+}
+
+.semiFooter {
+	display: grid;
+	margin-top: 20px;
+	padding-top: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 30px;
+	background-color: #131817;
+	color: white;
+	text-align: center;
+	font-size: 1rem;
+	text-align: justify-all;
+}
+
+.signs {
+	margin-top: 10px;
+	margin-left: 50%;
+	transform: translate(-50%, 0);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+}
+
+.foot {
+	background-color: black;
+	padding: 10px;
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+}
+
+.socialMedia {
+	padding: 5px;
+	border-radius: 20px;
+	/*background-color: yellow;*/
+	display: grid;
+	grid-gap: 20px;
+	width: 100%;
+	grid-template-columns: repeat(6, 30px);
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.socialMedia>a {
+	text-decoration: none;
+	color: white;
+}
+.socialMedia>a:active {
+	color: red;
+}
+.socialMedia>a:hover {
+	color: magenta;
+}
+
+.socialMedia>a:active {
+	color: red;
+}
+
+
+/*MEDIA QWERY*/
+
+@media screen and (max-width: 768px) {
+	#addReviews>input {
+		border: 1px red dashed;
+		padding: 5px;
+		margin: 5px;
+		width: 80%;
+		text-align: center;
+	}
+	#addReviews>button {
+		background: white;
+		border: 1px red dashed;
+		padding: 5px;
+		margin: 5px;
+		width: 30%;
+		text-align: center;
+	}
+	#addReviews>textarea {
+		height: 100px;
+		background: white;
+		border: 1px red dashed;
+		padding: 5px;
+		margin: 5px;
+		min-width: 80%;
+		max-width: 80%;
+		text-align: center;
+	}
+	.stararea {
+		align-items: center;
+		justify-items: center;
+		border: 1px red dashed;
+		width: 83%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: auto;
+	}
+	.testimoPics {
+		filter: gray;
+		height: 20vh;
+		border-radius: 20px;
+		object-fit: cover;
+		object-position: center;
+	}
+	.submitedRating{
+		width: 30%;
+		/* background: yellow; */
+		display: grid;
+		grid-template-columns: repeat(5,1fr);
+	}
+	.Recipies {
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: 1fr;
+		margin: 20px;
+	}
+	.semiFooter {
+		margin-top: 20px;
+		padding: 30px;
+		background-color: #131817;
+		color: white;
+		text-align: center;
+		font-size: 10px;
+		text-align: justify;
+	}
+	.signs {
+		display: none;
+	}
+	input[type=text] {
+		width: 20%;
+		-webkit-transition: width 0.15s ease-in-out;
+		transition: width 0.15s ease-in-out;
+	}
+	/* When the input field gets focus, 
+        change its width to 100% */
+	input[type=text]:focus {
+		width: 40%;
+		outline: none !important;
+	}
+	#searchbar {
+		margin-top: 50px;
+		margin-left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 10px;
+		border-radius: 20px;
+	}
+}
